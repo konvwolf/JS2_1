@@ -104,7 +104,7 @@ function renderCart(i) {
 								</div>
 							</div>
 						</div>`; // добавил подсчет промежуточного итога по каждому продукту в корзине, поправил опечатки
-		totalPrice = totalPrice + item.quantity * item.price; // добавил счетчик итого
+		totalPrice += item.quantity * item.price; // добавил счетчик итого
 	}
 	let cartTotals =   `<div class="cart-totals">
 							<div class="cart-total-sign">Your totals:</div>
